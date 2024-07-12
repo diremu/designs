@@ -65,6 +65,25 @@ body {
   flex-direction: column-reverse;
 }
 
+#prevOutputBox {
+  flex-basis: 100%;
+  margin-bottom: 2vh;
+  border:0px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#prevOutputBox input {
+  width: 100%;
+  background-color: transparent;
+  outline: 0px solid transparent;
+  pointer-events: none;
+  border: 0px solid transparent;
+  color: white;
+  text-align: left;
+  font-size: 1.95rem;
+}
+
 #input-box input{
   width: 100%;
   background-color: transparent;

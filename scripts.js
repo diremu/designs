@@ -1,5 +1,5 @@
 let buttons = document.querySelectorAll("button");
-let output = document.querySelector("#output").value;
+let output = document.querySelector("#output");
 let numbers = document.querySelectorAll(".digits")
 
 for (let i=0; i < buttons.length;i++) {
@@ -9,7 +9,7 @@ for (let i=0; i < buttons.length;i++) {
 function handleClick(e) {
     switch (e.target.dataset.value) {
         case "clear":
-            output = ""
+            output.value = '';
             break;
         case "clearAll":
             output = ""
@@ -19,6 +19,8 @@ function handleClick(e) {
             outputString.pop()
             output = outputString.join('')
             break;
-        case "/":
+        default:
+            alert('Use a proper command');
+            break;
     }
 }
