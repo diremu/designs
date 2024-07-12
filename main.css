@@ -65,6 +65,17 @@ body {
   flex-direction: column-reverse;
 }
 
+#input-box input{
+  width: 100%;
+  background-color: transparent;
+  outline: 0px solid transparent;
+  pointer-events: none;
+  border: 0px solid transparent;
+  color: white;
+  text-align: right;
+  font-size: 1.95rem;  
+}
+
 #prevOutputBox {
   flex-basis: 100%;
   margin-bottom: 2vh;
@@ -84,20 +95,10 @@ body {
   font-size: 1.25rem;
 }
 
-#input-box input{
-  width: 100%;
-  background-color: transparent;
-  outline: 0px solid transparent;
-  pointer-events: none;
-  border: 0px solid transparent;
-  color: white;
-  text-align: right;
-  font-size: 1.95rem;
-}
 
 #buttonContainer {
   display: flex;
-  flex-direction: column
+  flex-direction: column;
 }
 
 #buttonContainer  button[type="button"] {
@@ -146,7 +147,3 @@ body {
 .equate:hover {
   background-color: #b36335;
 }
-
-/* .digit {
-  background-color: rgb(22, 22, 22)
-} */
